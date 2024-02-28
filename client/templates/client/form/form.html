@@ -1,0 +1,99 @@
+{% extends 'form_base.html' %}
+
+{% load static %}
+
+{% block title %}
+    Enquiry
+{% endblock title %}
+
+{% block content %}
+<section class="progressive-form" id="progressiveForm" style="background-image: url('{% static 'images/img17.jpg' %}')">
+    <button id="closeForm"><i class="fas fa-window-close"></i></button>
+    <form action="" method="post" class="inquiry-form">
+        {% csrf_token %}
+        <div class="steps" data-step="1">
+            <h1>Do you know where you would wish to visit</h1>
+            <div class="tour-options">
+                <input type="button" name="" value="Uganda">            
+                <input type="button" name="" value="Kenya">            
+                <input type="button" name="" value="Tanzania">            
+                <input type="button" name="" value="Rwanda">            
+                <input type="button" name="" value="Burundi">            
+                <input type="button" name="" value="Zanzibar"> 
+            </div>
+        </div>
+        <div class="steps" data-step="2">
+            <h1>When would you like to travel</h1>
+            <div class="travel-plan">
+                <input type="button" name="" value="I know when">            
+                <input type="button" name="" value="Not yet planned">            
+            </div>
+        </div>
+        <div class="steps" data-step="3">
+            <h1>When would you like to travel</h1>
+            <div class="travel-calender">
+                <div class="calender">
+                    <h3>Start</h3>
+                    <input type="date" name="">
+                </div>
+                <div class="calender">
+                    <h3>End</h3>
+                    <input type="date" name="">
+                </div>
+            </div>
+        </div>
+        <div class="steps" data-step="4">
+            <h1>Who are you travelling with</h1>
+            <div class="travel-plan">
+                <input type="button" name="" value="solo">            
+                <input type="button" name="" value="couple">            
+                <input type="button" name="" value="family">            
+                <input type="button" name="" value="friends">            
+            </div>
+        </div>
+        <div class="steps" data-step="5">
+            <h1>How many are you travelling with</h1>
+            <div class="travel-calender">
+                <div class="calender">
+                    <h3>Adults</h3>
+                    <input type="number" min="1" name="" placeholder="No. ">
+                </div>
+                <div class="calender">
+                    <h3>Children</h3>
+                    <input type="number" min="0" name="" placeholder="No. ">
+                </div>
+            </div>
+        </div>
+        <div class="steps" data-step="6">
+            <h1>What's your travel budget per person</h1>
+            <div class="travel-plan">
+                <input type="button" name="" value="usd 7K - 10K">            
+                <input type="button" name="" value="usd 10K - 20K">            
+                <input type="button" name="" value="usd 20K - 30K">            
+                <input  name="" min="0" placeholder="Custom Quote." class="custom-quote">            
+            </div>
+        </div>
+        <div class="steps" data-step="7">
+            <h1>Fill out your credentials</h1>
+            <div class="travel-calender">
+                <div class="calender credentials">
+                    <input type="email"  name="" placeholder="Email" required>
+                </div>
+                <div class="calender credentials">
+                    <input type="text" name="" placeholder="Full Name" required>
+                </div>
+                <div class="calender credentials">
+                    <input type="tel" min="0" name="" placeholder="Tel." required>
+                </div>
+            </div>
+            <button  type="submit">SEND <i class="fa fa-plane"></i></button>
+        </div>
+    </form>
+    <div class="progressive-form-btn">
+        <button id="prevButton"><i class="fas fa-angle-double-left"></i> Back</button>
+        <button id="nextButton">Next <i class="fas fa-angle-double-right"></i></button>
+    </div>
+</section>
+
+{% endblock content %}
+

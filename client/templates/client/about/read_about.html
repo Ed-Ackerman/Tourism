@@ -1,0 +1,143 @@
+{% extends 'client_base.html' %}
+
+{% load static %}
+
+{% block title %}
+    Read More About Us
+{% endblock title %}
+
+{% block content %}
+
+<section class="main-destination-section" >
+    <div class="destination-hero-img" style="background-image: url('{% static 'images/img34.jpg' %}')">
+        <h1>Preserve your memories with beautiful souvenirs</h1>
+    </div>
+</section>
+
+<section class="about-souvenirs-section">
+
+    <div class="about-souvenirs-content">
+        <div class="about-souvenirs-img" style="background-image: url('{% static 'images/img24.jpg' %}')"></div>
+       <hr class="vertical-line"> 
+       <hr class="vertical-line"> 
+
+        <div class="about-souvenirs-details sub-details">
+            Live out a desert fantasy on safari in Namibia. Climb ancient dunes of red sand, rising out of the Namib Desert. Feel the thrill of tracking desert-adapted black rhinos on foot with our expert guides. Wander along the Skeleton Coast, wild, windswept and seemingly stretching to infinity. Marvel at the wonders of Damaraland's Petrified Forest with trees as old as 280 million years.
+        </div>
+    </div>
+    <hr class="horizontal-line">
+    <hr class="horizontal-line">
+    <div class="about-souvenirs-img img2" style="background-image: url('{% static 'images/img30.jpg' %}')"></div>
+
+    <h1>Why consider these souvenirs</h1>
+
+    <div class="about-souvenirs-details">
+        Live out a desert fantasy on safari in Namibia. Climb ancient dunes of red sand, rising out of the Namib Desert. Feel the thrill of tracking desert-adapted black rhinos on foot with our expert guides. Wander along the Skeleton Coast, wild, windswept and seemingly stretching to infinity. Marvel at the wonders of Damaraland's Petrified Forest with trees as old as 280 million years.
+    </div>
+
+    <div class="safari-iconic-dropdown-section">
+        <div class="dropdown-btns">
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">wildlife <i class="fas fa-angle-down"></i></button>
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">architecture <i class="fas fa-angle-down"></i></button>
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">culture <i class="fas fa-angle-down"></i></button>
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">professionalism <i class="fas fa-angle-down"></i></button>
+        </div>
+        <hr>
+        <div class="dropdown-content">
+            <div class="dropdown-content-img" style="background-image: url('{% static 'images/img16.jpg' %}')"></div>
+            <div class="dropdown-content-detail">
+                <h1>incredible wildlife encounter</h1>
+                <div class="dropdown-content-message">
+                    Our accommodation is both luxurious and authentic. We promise unrivalled comfort and exclusivity while staying true to the vibrant soul and spirit of each, unique destination. Our private game viewing areas have limits on guest numbers, meaning fewer vehicles and people, with more intimate and up-close encounters with wildlife in their natural habitat.
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown-content">
+            <div class="dropdown-content-img" style="background-image: url('{% static 'images/img29.jpg' %}')"></div>
+            <div class="dropdown-content-detail">
+                <h1>incredible architecture</h1>
+                <div class="dropdown-content-message">
+                    Our accommodation is both luxurious and authentic. We promise unrivalled comfort and exclusivity while staying true to the vibrant soul and spirit of each, unique destination. Our private game viewing areas have limits on guest numbers, meaning fewer vehicles and people, with more intimate and up-close encounters with wildlife in their natural habitat.
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown-content">
+            <div class="dropdown-content-img" style="background-image: url('{% static 'images/img17.jpg' %}')"></div>
+            <div class="dropdown-content-detail">
+                <h1>magineficent culture</h1>
+                <div class="dropdown-content-message">
+                    Our accommodation is both luxurious and authentic. We promise unrivalled comfort and exclusivity while staying true to the vibrant soul and spirit of each, unique destination. Our private game viewing areas have limits on guest numbers, meaning fewer vehicles and people, with more intimate and up-close encounters with wildlife in their natural habitat.
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown-content">
+            <div class="dropdown-content-img" style="background-image: url('{% static 'images/img13.jpg' %}')"></div>
+            <div class="dropdown-content-detail">
+                <h1>our professionalism</h1>
+                <div class="dropdown-content-message">
+                    Our accommodation is both luxurious and authentic. We promise unrivalled comfort and exclusivity while staying true to the vibrant soul and spirit of each, unique destination. Our private game viewing areas have limits on guest numbers, meaning fewer vehicles and people, with more intimate and up-close encounters with wildlife in their natural habitat.
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <a href="{% url 'client:shop' %}">visit our souvenir shop</a>
+</section>
+
+<section class="bloging-article-categories blogs">
+    <h1>stories and blogs</h1> 
+    <div class="bloging-articles">
+        <a href="{% url 'client:read_blog_page' %}" class="bloging-article-profile">
+            <div class="bloging-article-profile-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+            <div class="bloging-article-profile-details">
+                <h3>article name</h3>
+                <hr>
+                <div class="bloging-article-profile-icons">
+                    <button><i class="fas fa-heart"></i>12</button>
+                    <button><i class="fas fa-comment"></i>2</button>
+                </div>
+            </div>
+        </a>
+        <a href="{% url 'client:read_blog_page' %}" class="bloging-article-profile">
+            <div class="bloging-article-profile-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+            <div class="bloging-article-profile-details">
+                <h3>article name</h3>
+                <hr>
+                <div class="bloging-article-profile-icons">
+                    <button><i class="fas fa-heart"></i>12</button>
+                    <button><i class="fas fa-comment"></i>2</button>
+                </div>
+            </div>
+        </a>
+        <a href="{% url 'client:read_blog_page' %}" class="bloging-article-profile">
+            <div class="bloging-article-profile-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+            <div class="bloging-article-profile-details">
+                <h3>article name</h3>
+                <hr>
+                <div class="bloging-article-profile-icons">
+                    <button><i class="fas fa-heart"></i>12</button>
+                    <button><i class="fas fa-comment"></i>2</button>
+                </div>
+            </div>
+        </a>
+        <a href="{% url 'client:read_blog_page' %}" class="bloging-article-profile">
+            <div class="bloging-article-profile-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+            <div class="bloging-article-profile-details">
+                <h3>article name</h3>
+                <hr>
+                <div class="bloging-article-profile-icons">
+                    <button><i class="fas fa-heart"></i>12</button>
+                    <button><i class="fas fa-comment"></i>2</button>
+                </div>
+            </div>
+        </a>
+    </div>
+    <a href="{% url 'client:main_blog_page' %}" class="view-all-blogs"> <i class="fas fa-angle-right"></i> View all blogs</a>
+
+</section>
+
+{% include 'partials/client/client_footer.html' %}
+{% endblock %}

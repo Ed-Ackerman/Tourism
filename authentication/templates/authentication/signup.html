@@ -1,0 +1,47 @@
+{% extends 'auth_base.html' %}
+{% load static %}
+
+{% block title %}
+    Scared Gem Safaris - Signup
+{% endblock title %}
+{% block content %}
+
+    <div class="signup-section" style="background-image: url('{% static 'images/lion1.jpg' %}')">
+        <div class="dark-overlay"></div>
+        <form action="{% url 'authentication:signup' %}" method="post" class="auth-form">
+            <legend class="auth-legend" >SignUp</legend>
+            {% for message in messages %}
+                <div class="alert
+                    {% if message.tags == 'success' %} alert-success
+                    {% elif message.tags == 'error' %} alert-danger
+                    {% else %} alert-info
+                    {% endif %}
+                    fade-message">
+                    {{ message }}
+                </div>
+            {% endfor %}
+            {% csrf_token %}
+            <div class="form-input-group">
+                <label for="id_username">Username:</label>
+                <input type="text" name="username" id="id_username" required>
+            </div>
+            <div class="form-input-group">
+                <label for="id_email">Email:</label>
+                <input type="email" name="email" id="id_email" required>
+            </div>
+            <div class="form-input-group">
+                <label for="id_password">Password:</label>
+                <input type="password" name="password" id="id_password" required>
+            </div>
+            <div class="form-input-group">
+                <label for="id_confirm_password">Confirm Password:</label>
+                <input type="password" name="confirm_password" id="id_confirm_password" required>
+            </div>
+            <label for="id_confirm_password">Remeber Me</label>
+            <input type="checkbox" name="remember_me">
+            <button type="submit" class="auth-btn">SignUp</button>
+         
+            <small>Already have an account</small> <a href="{% url 'authentication:login' %}">Login</a>
+        </form>
+    </div>
+{% endblock content %}

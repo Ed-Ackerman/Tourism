@@ -1,0 +1,316 @@
+{% load static %}
+
+<a href="mailto:edmcdarwin777@gmail.com" class="contact-us"><i class="far fa-envelope"></i></a>
+
+<section class="safari-enquiry-section">
+    <video width="100%" height="100%" autoplay loop muted>
+        <source src="{{ MEDIA_URL }}/media/africa.mp4" type="video/mp4">
+    </video>
+    <div class="enquiry-content">
+        <h1>START YOUR EXPERIENCE</h1>
+        <div class="enquiry-details">
+            When we say we're there every step of the way, we mean it, literally. From planning the perfect circuit, to private inter-camp transfers on Wilderness Air, and easing you through Customs. We’re with you on the ground, at your side, 24-7, from start to finish. Ready to take the road less travelled? Contact our Travel Designers to plan an unforgettable journey
+        </div>
+        <a href="{% url 'client:progess_form' %}">enquire now</a>
+    </div>
+</section>
+
+<section class="newsletter-section" style="background-image: url('{% static 'images/elephant.jpg' %}')">
+    <h1>never miss out</h1>
+    <div class="newsletter-content">
+        subscribe to our news letter for article updates that inspire you to get started
+    </div>
+    <form action="" method="post" class="newsletter-form">
+        {% csrf_token %}
+        <div class="input-form-group">
+            <input type="text" name="subscriber_names" placeholder="Name(s)">
+        </div>
+        <div class="input-form-group">
+            <input type="email" name="email" placeholder="Email Address">
+        </div>
+        <div class="input-form-group">
+            <input type="text" name="country" list="countries" placeholder="Country Of Residence">
+            <datalist id="countries">
+                <option value="Afghanistan">
+                <option value="Albania">
+                <option value="Algeria">
+                <option value="Andorra">
+                <option value="Angola">
+                <option value="Antigua and Barbuda">
+                <option value="Argentina">
+                <option value="Armenia">
+                <option value="Australia">
+                <option value="Austria">
+                <option value="Azerbaijan">
+                <option value="Bahamas">
+                <option value="Bahrain">
+                <option value="Bangladesh">
+                <option value="Barbados">
+                <option value="Belarus">
+                <option value="Belgium">
+                <option value="Belize">
+                <option value="Benin">
+                <option value="Bhutan">
+                <option value="Bolivia">
+                <option value="Bosnia and Herzegovina">
+                <option value="Botswana">
+                <option value="Brazil">
+                <option value="Brunei">
+                <option value="Bulgaria">
+                <option value="Burkina Faso">
+                <option value="Burundi">
+                <option value="Cabo Verde">
+                <option value="Cambodia">
+                <option value="Cameroon">
+                <option value="Canada">
+                <option value="Central African Republic">
+                <option value="Chad">
+                <option value="Chile">
+                <option value="China">
+                <option value="Colombia">
+                <option value="Comoros">
+                <option value="Congo">
+                <option value="Costa Rica">
+                <option value="Croatia">
+                <option value="Cuba">
+                <option value="Cyprus">
+                <option value="Czechia">
+                <option value="Denmark">
+                <option value="Djibouti">
+                <option value="Dominica">
+                <option value="Dominican Republic">
+                <option value="Ecuador">
+                <option value="Egypt">
+                <option value="El Salvador">
+                <option value="Equatorial Guinea">
+                <option value="Eritrea">
+                <option value="Estonia">
+                <option value="Eswatini">
+                <option value="Ethiopia">
+                <option value="Fiji">
+                <option value="Finland">
+                <option value="France">
+                <option value="Gabon">
+                <option value="Gambia">
+                <option value="Georgia">
+                <option value="Germany">
+                <option value="Ghana">
+                <option value="Greece">
+                <option value="Grenada">
+                <option value="Guatemala">
+                <option value="Guinea">
+                <option value="Guinea-Bissau">
+                <option value="Guyana">
+                <option value="Haiti">
+                <option value="Honduras">
+                <option value="Hungary">
+                <option value="Iceland">
+                <option value="India">
+                <option value="Indonesia">
+                <option value="Iran">
+                <option value="Iraq">
+                <option value="Ireland">
+                <option value="Israel">
+                <option value="Italy">
+                <option value="Jamaica">
+                <option value="Japan">
+                <option value="Jordan">
+                <option value="Kazakhstan">
+                <option value="Kenya">
+                <option value="Kiribati">
+                <option value="Korea, North">
+                <option value="Korea, South">
+                <option value="Kosovo">
+                <option value="Kuwait">
+                <option value="Kyrgyzstan">
+                <option value="Laos">
+                <option value="Latvia">
+                <option value="Lebanon">
+                <option value="Lesotho">
+                <option value="Liberia">
+                <option value="Libya">
+                <option value="Liechtenstein">
+                <option value="Lithuania">
+                <option value="Luxembourg">
+                <option value="Madagascar">
+                <option value="Malawi">
+                <option value="Malaysia">
+                <option value="Maldives">
+                <option value="Mali">
+                <option value="Malta">
+                <option value="Marshall Islands">
+                <option value="Mauritania">
+                <option value="Mauritius">
+                <option value="Mexico">
+                <option value="Micronesia">
+                <option value="Moldova">
+                <option value="Monaco">
+                <option value="Mongolia">
+                <option value="Montenegro">
+                <option value="Morocco">
+                <option value="Mozambique">
+                <option value="Myanmar">
+                <option value="Namibia">
+                <option value="Nauru">
+                <option value="Nepal">
+                <option value="Netherlands">
+                <option value="New Zealand">
+                <option value="Nicaragua">
+                <option value="Niger">
+                <option value="Nigeria">
+                <option value="North Macedonia">
+                <option value="Norway">
+                <option value="Oman">
+                <option value="Pakistan">
+                <option value="Palau">
+                <option value="Panama">
+                <option value="Papua New Guinea">
+                <option value="Paraguay">
+                <option value="Peru">
+                <option value="Philippines">
+                <option value="Poland">
+                <option value="Portugal">
+                <option value="Qatar">
+                <option value="Romania">
+                <option value="Russia">
+                <option value="Rwanda">
+                <option value="Saint Kitts and Nevis">
+                <option value="Saint Lucia">
+                <option value="Saint Vincent and the Grenadines">
+                <option value="Samoa">
+                <option value="San Marino">
+                <option value="Sao Tome and Principe">
+                <option value="Saudi Arabia">
+                <option value="Senegal">
+                <option value="Serbia">
+                <option value="Seychelles">
+                <option value="Sierra Leone">
+                <option value="Singapore">
+                <option value="Slovakia">
+                <option value="Slovenia">
+                <option value="Solomon Islands">
+                <option value="Somalia">
+                <option value="South Africa">
+                <option value="South Sudan">
+                <option value="Spain">
+                <option value="Sri Lanka">
+                <option value="Sudan">
+                <option value="Suriname">
+                <option value="Sweden">
+                <option value="Switzerland">
+                <option value="Syria">
+                <option value="Taiwan">
+                <option value="Tajikistan">
+                <option value="Tanzania">
+                <option value="Thailand">
+                <option value="Timor-Leste">
+                <option value="Togo">
+                <option value="Tonga">
+                <option value="Trinidad and Tobago">
+                <option value="Tunisia">
+                <option value="Turkey">
+                <option value="Turkmenistan">
+                <option value="Tuvalu">
+                <option value="Uganda">
+                <option value="Ukraine">
+                <option value="United Arab Emirates">
+                <option value="United Kingdom">
+                <option value="United States">
+                <option value="Uruguay">
+                <option value="Uzbekistan">
+                <option value="Vanuatu">
+                <option value="Vatican City">
+                <option value="Venezuela">
+                <option value="Vietnam">
+                <option value="Yemen">
+                <option value="Zambia">
+                <option value="Zimbabwe">
+            </datalist>
+        </div>
+        <button type="submit">Subscribe</button>
+    </form>
+</section>
+
+<section class="testimonial-section" id="carousel4">
+    <h3>what our clients say</h3>
+    <hr style="background-color: #000; padding: 3px 3px; color: #000;" >
+    <div class="testimonial-slider">
+        <div class="testimonial-profile active">
+            <div class="testimonial">
+                When we say we're there every step of the way, we mean it, literally. From planning the perfect circuit, to private inter-camp transfers on Wilderness Air, and easing you through Customs. We’re with you on the ground, at your side, 24-7, from start to finish. Ready to take the road less travelled? Contact our Travel Designers to plan an unforgettable journey
+            </div>
+            <div class="testimony-name">Ed Ackerman</div>
+            <div class="testimony-date">12.04.2024</div>
+        </div>
+        <div class="testimonial-profile">
+            <div class="testimonial">
+                Our accommodation is both luxurious and authentic. We promise unrivalled comfort and exclusivity while staying true to the vibrant soul and spirit of each, unique destination. Our private game viewing areas have limits on guest numbers, meaning fewer vehicles and people, with more intimate and up-close encounters with wildlife in their natural habitat.
+            </div>
+            <div class="testimony-name">Isa Moner</div>
+            <div class="testimony-date">02.04.2024</div>
+        </div>
+        <div class="testimonial-profile">
+            <div class="testimonial">
+                Our journeys change lives. Not just yours but also those of our staff, communities, and the ecosystems we impact. We restore wilderness through low-volume high-value conservation tourism. Our purpose is a shared one. To ensure upliftment of local communities with help from guests, partners, donors, governments, and researchers. Our ambitions are bold. Our model is responsible, sustainable, inspiring.
+            </div>
+            <div class="testimony-name">Gabby Isabela</div>
+            <div class="testimony-date">22.04.2024</div>
+        </div>
+        <button class="prev-btn">❮</button>
+        <button class="next-btn">❯</button>
+        <div class="dots-container"></div>
+    </div>
+</section>
+
+<footer class="safari-footer">
+    <div class="footer-socials">
+        <a href="https://vm.tiktok.com/ZM64USTSM/"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/p/CqVoP1btuQU/?igsh=NmJiYWZiY2E0Mg=="><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/sacred_safaris/status/1701165478540968141?s=48"><i class="fab fa-twitter"></i></a>
+    </div>
+    
+    <div class="main-footer-anchors">
+        <div class="main-footer-anchor-details">
+            <h3 class="main-footer-dropper">Services</h3>
+            <div class="main-footer-dropdown-content">
+                <a href="">Our Packages</a>
+                <a href="">Excursions</a>
+                <a href="">Gear Rentals</a>
+                <a href="">Souvenirs</a>
+            </div>
+        </div>
+        <div class="main-footer-anchor-details">
+            <h3 class="main-footer-dropper">Destinations</h3>
+            <div class="main-footer-dropdown-content">
+                <a href="">Uganda</a>
+                <a href="">Kenya</a>
+                <a href="">Tanzania</a>
+                <a href="">Rwanda</a>
+            </div>
+        </div>
+        <div class="main-footer-anchor-details">
+            <h3 class="main-footer-dropper">About Us</h3>
+            <div class="main-footer-dropdown-content">
+                <a href="">About</a>
+                <a href="">Impact</a>
+                <a href="">Articles</a>
+                <a href="">Blogs</a>
+            </div>
+        </div>
+    </div>  
+    
+    <div class="footer-logo" style="background-image: url('{% static 'images/logo3.png' %}')"></div>
+    <div class="footer-text">
+        Thanks for visiting please take note of our
+    </div>
+    <div class="footer-privacy-anchors">
+        <a href="">Disclaimer</a>
+        and
+        <a href="">Privacy Policy</a>
+    </div>
+    <div class="footer-copy">
+        Copyright &copy;{% now "Y" %} Sacred Gem Safaris <br>
+        All rights reserved
+    </div>
+    
+</footer>

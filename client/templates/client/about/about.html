@@ -1,0 +1,150 @@
+{% extends 'client_base.html' %}
+
+{% load static %}
+
+{% block title %}
+    About - Scared Gem Safaris
+{% endblock title %}
+
+{% block content %}
+
+<section class="main-destination-section" >
+    <div class="destination-hero-img about-us-hero-img" style="background-image: url('{% static 'images/img35.jpg' %}')">
+        <h1>Tourism for sustainable development</h1>
+    </div>
+</section>
+
+<section class="glance-paticular-destination-section about-scared-gem">
+    <h3>About Scared Gem Safaris</h3>
+    <hr class="top-line">
+    <hr class="side-line">
+    <div class="glance-gallery transition-imgs">
+        <div class="glance-gallery-content main-img">
+            <div class="glance-gallery-img img-1" style="background-image: url('{% static 'images/img17.jpg' %}')"></div>
+            <div class="glance-gallery-details">
+                <h3>The mighty machison falls</h3>
+                <hr>
+                <p>taken on a trip with alsion K</p>
+            </div>
+        </div>
+        <div class="glance-gallery-content sub-img">
+            <div class="glance-gallery-img img-2" style="background-image: url('{% static 'images/img6.jpg' %}')"></div>
+            <div class="glance-gallery-details">
+                <h3>The mighty machison falls</h3>
+                <hr>
+                <p>taken on a trip with alsion K</p>
+            </div>
+        </div>
+    </div>
+    <div class="about-scared-gem-content">
+        Live out a desert fantasy on safari in Namibia. Climb ancient dunes of red sand, rising out of the Namib Desert. Feel the thrill of tracking desert-adapted black rhinos on foot with our expert guides. Wander along the Skeleton Coast, wild, windswept and seemingly stretching to infinity. Marvel at the wonders of Damaraland's Petrified Forest with trees as old as 280 million years.
+    </div>
+</section>
+
+<section class="safari-journey-section about-us" style="background-image: url('{% static 'images/img33.jpg' %}')">
+    <h1>conserving east africa's wilde life through tourism</h1>
+    <a href="{% url 'client:progess_form' %}" class="scrollable-link">
+        <span class="text">Our Impact</span>
+        <i class="fa fa-angle-right"></i>
+    </a>
+</section>  
+
+<section class="manifesto-section">
+    <div class="manifesto-img" style="background-image: url('{% static 'images/img26.jpg' %}')"></div>
+
+    <div class="manifesto-content">
+        <h1>Our manifesto</h1>
+        <div class="manifesto-details">As a leading conservation and hospitality company, we focus on immersing our guests in our many fascinating environments. Guiding them through each expansive private concession. Creating intimate encounters between them, nature and culture. And ultimately, increasing the world’s wilderness by involving more and more people in our purpose.</div>
+        <a href="{% url 'client:read_more' %}"><i class="fa fa-plus-circle"></i>read more</a>
+        
+    </div>
+</section>
+
+<section class="vision-section">
+    <div class="vision-content">
+        <h1>It all started with a vision...</h1>
+        <div class="vision-details">
+            Wilderness exists to make sure the world will always have a version of its iconic wild places that is unfenced, untamed and unpredictable. It’s not our reputation as one of the first, or the largest, in the conservation tourism space that makes us Wilderness. It’s our determined push to keep going. To keep protecting, exploring and expanding Earth’s ultimate, untamed places. And then to bring guests to discover the beating pulse of each one.
+        </div>
+        <a href="{% url 'client:read_more' %}"><i class="fa fa-plus-circle"></i>read our journey</a>
+    </div>
+    <div class="vision-img" style="background-image: url('{% static 'images/img11.jpg' %}')"></div>
+</section>
+
+<section class="partners-section">
+    <div class="partners-img" style="background-image: url('{% static 'images/img25.jpg' %}')"></div>
+
+    <div class="partners-content">
+        <h1>Our partnerships</h1>
+        <div class="partners-details">
+            Our global partner network helps us bring to life our incomparable Wilderness journeys. We align with the very best airlines, non-profit organisatons, travel agencies, apparel brands and more all with a focus on sustainable practices and making a positive impact.
+            <br>
+            Wilderness exists to make sure the world will always have a version of its iconic wild places that is unfenced, untamed and unpredictable. It’s not our reputation as one of the first, or the largest, in the conservation tourism space that makes us Wilderness. It’s our determined push to keep going. To keep protecting, exploring and expanding Earth’s ultimate, untamed places. And then to bring guests to discover the beating pulse of each one.
+        </div>
+        <a href="{% url 'client:read_more' %}"><i class="fa fa-plus-circle"></i>read more collaborations</a>
+    </div>
+</section>
+
+<section class="collaborators-section">
+    <div class="collaborators-profile" style="background-image: url('{% static 'images/logo.png' %}')">
+        
+    </div>
+    <div class="collaborators-profile" style="background-image: url('{% static 'images/logo.png' %}')">
+       
+    </div>
+    <div class="collaborators-profile" style="background-image: url('{% static 'images/logo.png' %}')">
+        
+    </div>
+</section>
+
+
+
+<section class="family-section">
+
+    <div class="family-photos transition-imgs">
+        <div class="family-img main-img" style="background-image: url('{% static 'images/img24.jpg' %}')"></div>
+        <div class="family-img sub-img" style="background-image: url('{% static 'images/img6.jpg' %}')"></div>
+    </div>
+
+    <div class="family-content">
+        <h1>The Wilderness family</h1>
+        <div class="family-details">What started as a passionate group of African guides in 1983 is now Wilderness: a world-leading conservation and hospitality company. Our brand family encompasses non-profit community and conservation entities, a private airline, destination management companies and several travel trade partners.</div>
+    </div>
+
+    <a href="{% url 'client:read_more' %}"><i class="fa fa-plus-circle"></i>learn more</a>
+
+</section>
+
+<section class="counter-section">
+    <div class="counter-profile">
+        <div class="counter-icons" style="background-image: url('{% static 'images/icon1.png' %}')"></div>
+        <div class="counter-number">6</div>
+        <div class="counter-name">African countries</div>
+    </div>
+    <div class="counter-profile">
+        <div class="counter-icons" style="background-image: url('{% static 'images/icon4.png' %}')"></div>
+        <div class="counter-number">60+</div>
+        <div class="counter-name">Camps and lodges</div>
+    </div>
+    <div class="counter-profile">
+        <div class="counter-icons" style="background-image: url('{% static 'images/icon3.png' %}')"></div>
+        <div class="counter-number">100+</div>
+        <div class="counter-name">Staff employed</div>
+    </div>
+    <div class="counter-profile">
+        <div class="counter-icons" style="background-image: url('{% static 'images/icon2.png' %}')"></div>
+        <div class="counter-number">100K+</div>
+        <div class="counter-name">Guests hosted per year</div>
+    </div>
+</section>
+
+<section class="about-us-video" style="background-image: url('{% static 'images/img33.jpg' %}')">
+    {% comment %} <video width="100%" height="100%" autoplay loop controls>
+        <source src="{{ MEDIA_URL }}/media/africa.mp4" type="video/mp4">
+    </video> {% endcomment %}
+    <h1>we are untamed experience</h1>
+</section>
+
+{% include 'partials/client/client_footer.html' %}
+
+{% endblock content %}

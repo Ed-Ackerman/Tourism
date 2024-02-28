@@ -1,0 +1,97 @@
+{% load static %}
+
+<nav class="navigation" >
+    <div class="main-menu" id="mainMenu" style="background-image: url('{% static 'images/logo.png' %}')">
+        <div class="nav-anchor" id="mainNav">
+
+            <div class="nav-anchor-item">
+                <div class="nav-anchor-display">Destinations</div>  
+            </div>
+            <div class="nav-sub-anchor">
+                <span class="nav-anchor-span">
+                    <i class="fas fa-arrow-left"></i>
+                    BACK
+                </span>
+                <button class="nav-anchor-btn">Uganda</button>
+                <div class="nav-anchor-droper">
+                    <a href="{% url 'client:main_destination_page' %}" class="main-page">The perl of africa</a>
+                    <a href="{% url 'client:particular_destination_page' %}">Kidepo NP</a>
+                    <a href="{% url 'client:particular_destination_page' %}">Marchison falls NP</a>
+                    <a href="{% url 'client:particular_destination_page' %}">bwindi impernatrable NP</a>
+                </div>
+            </div>
+            
+            <div class="nav-anchor-item">
+                <div class="nav-anchor-display">Experiences</div>  
+            </div>
+            <div class="nav-sub-anchor">
+                <span class="nav-anchor-span">
+                    <i class="fas fa-arrow-left"></i>
+                    BACK
+                </span>
+                <button class="nav-anchor-btn">Experience</button>
+                <div class="nav-anchor-droper">
+                    <a href="{% url 'client:main_experience_page' %}" class="main-page">Experience Life</a>
+                    <a href="{% url 'client:particular_experience_page' %}">Kidepo Camp</a>
+                </div>
+            </div>
+            
+            {% comment %} <div class="nav-anchor-item">
+                <div class="nav-anchor-display">Journeys</div>  
+            </div>
+            <div class="nav-sub-anchor">
+                <span class="nav-anchor-span">
+                    <i class="fas fa-arrow-left"></i>
+                    BACK
+                </span>
+                <a href="{% url 'client:main_journey_page' %}">Journeys</a>
+            </div> {% endcomment %}
+            
+            <div class="nav-anchor-item">
+                <a href="{% url 'client:main_about_page' %}">About</a>  
+            </div>
+            <div class="nav-anchor-item">
+                <a href="{% url 'client:our_team_page' %}">our team</a>  
+            </div>
+            <div class="nav-anchor-item">
+                <a href="{% url 'client:our_impact' %}">our impact</a>  
+            </div>
+
+            <div class="nav-anchor-item">
+                <a href="{% url 'client:main_blog_page' %}">Blog</a>  
+            </div>
+        </div>
+
+        <hr>
+        <div class="nav-btn">
+            <a class="gold-btn desktop-tour" href="{% url 'client:progess_form' %}">
+                START YOUR TOUR
+                <i class="fas fa-globe-africa"></i>
+            </a>
+            {% comment %} {% if user.is_authenticated %}
+                <a class="gold-btn" href="{% url 'authentication:logout' %}">Logout</a>
+            {% else %}
+                <a class="gold-btn" href="{% url 'authentication:signup' %}">Signup</a>
+                <a class="white-btn" href="{% url 'authentication:login' %}">Login</a>
+            {% endif %}
+            {% if user.is_staff %}
+                <a class="white-btn" href="{% url 'client:dashboard' %}">Dashboard</a>
+            {% endif %} {% endcomment %}
+        </div>
+    </div>
+
+    <div class="top-bar-nav">
+        <button class="menu" id="menuBtn">
+            <i class="fa fa-bars"></i>
+            <span class="top-bar-span">MENU</span>
+        </button>
+        <a href="/" class="brand-logo">
+            <div class="logo" style="background-image: url('{% static 'images/logo.png' %}')"></div>
+            <div class="company-name">Sacred Gem Safaris</div>
+        </a>
+        <a class="start-tour" href="{% url 'client:progess_form' %}">
+            <span class="top-bar-span" style="color: #100C08;">START YOUR TOUR</span>
+            <i class="fas fa-globe-africa"></i>
+        </a>
+    </div>
+</nav>

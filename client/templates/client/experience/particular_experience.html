@@ -1,0 +1,233 @@
+{% extends 'client_base.html' %}
+
+{% load static %}
+
+{% block title %}
+   Name Experience
+{% endblock title %}
+
+{% block content %}
+
+
+<section class="main-destination-section" >
+    <div class="destination-hero-img" style="background-image: url('{% static 'images/camping.jpg' %}')"></div>
+</section>
+
+<section class="authentic-experience-section">
+    <h1>we are untamed Experiences</h1>
+    <div class="authentic-experience-photos transition-imgs">
+        <div class="authentic-experience-imgs main-img" style="background-image: url('{% static 'images/img31.jpg' %}')"></div>
+        <div class="authentic-experience-imgs sub-img" style="background-image: url('{% static 'images/img32.jpg' %}')"></div>
+    </div>
+    <div class="authentic-experience-content">
+        <h3>an activity to captivate your heart and soul</h3>
+        <div class="authentic-experience-details">Our accommodation is both luxurious and authentic. We promise unrivalled comfort and exclusivity while staying true to the vibrant soul and spirit of each, unique destination. Our private game viewing areas have limits on guest numbers, meaning fewer vehicles and people, with more intimate and up-close encounters with wildlife in their natural habitat.</div>
+    </div>
+    <div class="authentic-experience-content">
+        <h3>our experiences</h3>
+        <div class="authentic-experience-details">Discover a diverse collection of our meticulously curated authentic experiences.</div>
+    </div>
+</section>
+
+<section class="luxurious-experience-section">
+    {% comment %} <div class="luxurious-experience-img-video" style="background-image: url('{% static 'images/img6.jpg' %}')"></div> {% endcomment %}
+    <div class="safari-iconic-dropdown-section luxurious-experience">
+        <div class="dropdown-btns">
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">birding <i class="fas fa-angle-down"></i></button>
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">game drives <i class="fas fa-angle-down"></i></button>
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">gollira trecking <i class="fas fa-angle-down"></i></button>
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">star gazing <i class="fas fa-angle-down"></i></button>
+        </div>
+        <div class="dropdown-content">
+            <div class="dropdown-content-img" style="background-image: url('{% static 'images/img16.jpg' %}')"></div>
+            <div class="dropdown-content-detail">
+                <h1>incredible wildlife encounter</h1>
+                <div class="dropdown-content-message">
+                    Our accommodation is both luxurious and authentic. We promise unrivalled comfort and exclusivity while staying true to the vibrant soul and spirit of each, unique destination. Our private game viewing areas have limits on guest numbers, meaning fewer vehicles and people, with more intimate and up-close encounters with wildlife in their natural habitat.
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown-content">
+            <div class="dropdown-content-img" style="background-image: url('{% static 'images/img29.jpg' %}')"></div>
+            <div class="dropdown-content-detail">
+                <h1>incredible architecture</h1>
+                <div class="dropdown-content-message">
+                    Our accommodation is both luxurious and authentic. We promise unrivalled comfort and exclusivity while staying true to the vibrant soul and spirit of each, unique destination. Our private game viewing areas have limits on guest numbers, meaning fewer vehicles and people, with more intimate and up-close encounters with wildlife in their natural habitat.
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown-content">
+            <div class="dropdown-content-img" style="background-image: url('{% static 'images/img17.jpg' %}')"></div>
+            <div class="dropdown-content-detail">
+                <h1>magineficent culture</h1>
+                <div class="dropdown-content-message">
+                    Our accommodation is both luxurious and authentic. We promise unrivalled comfort and exclusivity while staying true to the vibrant soul and spirit of each, unique destination. Our private game viewing areas have limits on guest numbers, meaning fewer vehicles and people, with more intimate and up-close encounters with wildlife in their natural habitat.
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown-content">
+            <div class="dropdown-content-img" style="background-image: url('{% static 'images/img13.jpg' %}')"></div>
+            <div class="dropdown-content-detail">
+                <h1>our professionalism</h1>
+                <div class="dropdown-content-message">
+                    Our accommodation is both luxurious and authentic. We promise unrivalled comfort and exclusivity while staying true to the vibrant soul and spirit of each, unique destination. Our private game viewing areas have limits on guest numbers, meaning fewer vehicles and people, with more intimate and up-close encounters with wildlife in their natural habitat.
+                </div>
+            </div>
+        </div>
+    </div> 
+</section>
+
+<section class="paticular-destination-packges-section experiences-intinary">
+    <h1>explore the machison falls np packages</h1>
+    <div class="experiences-intinary-details">
+        Our accommodation is both luxurious and authentic. We promise unrivalled comfort and exclusivity while staying true to the vibrant soul and spirit of each, unique destination. Our private game viewing areas have limits on guest numbers, meaning fewer vehicles and people, with more intimate and up-close encounters with wildlife in their natural habitat.
+    </div>
+    <hr>
+    <div class="paticular-destination-packges">
+        <a href="{% url 'client:intinerary' %}" class="paticular-destination-packges-profiles">
+            <div class="paticular-destination-profile-img" style="background-image: url('{% static 'images/img16.jpg' %}')"></div>
+            <div class="paticular-destination-profile-details">
+                <h3>name</h3>
+                <hr>
+                <p>
+                    <i class="fa fa-far fa-dot-circle"></i>
+                    12 Days
+                </p>
+                <p>
+                    <i class="fa fa-far fa-dot-circle"></i>
+                    3-6 People
+                </p>
+                <p>
+                    <i class="fa fa-far fa-dot-circle"></i>
+                    USD 3000/person
+                </p>
+            </div>
+        </a>
+        <a href="{% url 'client:intinerary' %}" class="paticular-destination-packges-profiles">
+            <div class="paticular-destination-profile-img" style="background-image: url('{% static 'images/img20.jpg' %}')"></div>
+            <div class="paticular-destination-profile-details">
+                <h3>name</h3>
+                <hr>
+                <p>
+                    <i class="fa fa-far fa-dot-circle"></i>
+                    12 Days
+                </p>
+                <p>
+                    <i class="fa fa-far fa-dot-circle"></i>
+                    3-6 People
+                </p>
+                <p>
+                    <i class="fa fa-far fa-dot-circle"></i>
+                    USD 3000/person
+                </p>               
+            </div>
+        </a>
+        <a href="{% url 'client:intinerary' %}" class="paticular-destination-packges-profiles">
+            <div class="paticular-destination-profile-img" style="background-image: url('{% static 'images/img10.jpg' %}')"></div>
+            <div class="paticular-destination-profile-details">
+                <h3>name</h3>
+                <hr>
+                <p>
+                    <i class="fa fa-far fa-dot-circle"></i>
+                    12 Days
+                </p>
+                <p>
+                    <i class="fa fa-far fa-dot-circle"></i>
+                    3-6 People
+                </p>
+                <p>
+                    <i class="fa fa-far fa-dot-circle"></i>
+                    USD 3000/person
+                </p>            
+            </div>
+        </a>
+        <a href="{% url 'client:intinerary' %}" class="paticular-destination-packges-profiles">
+            <div class="paticular-destination-profile-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+            <div class="paticular-destination-profile-details">
+                <h3>name</h3>
+                <hr>
+                <p>
+                    <i class="fa fa-far fa-dot-circle"></i>
+                    12 Days
+                </p>
+                <p>
+                    <i class="fa fa-far fa-dot-circle"></i>
+                    3-6 People
+                </p>
+                <p>
+                    <i class="fa fa-far fa-dot-circle"></i>
+                    USD 3000/person
+                </p>            
+            </div>
+        </a>
+    </div>
+</section>
+
+<section class="experience-variety-section">
+    <div class="experience-variety-img"  style="background-image: url('{% static 'images/img33.jpg' %}')">
+        <h1>Variety is what we offer</h1>
+    </div>
+    <div class="experience-variety-details">
+        Our accommodation is both luxurious and authentic. We promise unrivalled comfort and exclusivity while staying true to the vibrant soul and spirit of each, unique destination. Our private game viewing areas have limits on guest numbers, meaning fewer vehicles and people, with more intimate and up-close encounters with wildlife in their natural habitat.
+    </div>
+    <a href="{% url 'client:intinerary' %}"><i class="fa fa-angle-right"></i>VIEW ALL PACKAGES</a>
+</section>
+<section class="bloging-article-categories blogs">
+    <h1>stories and blogs</h1> 
+    <div class="bloging-articles">
+        <a href="{% url 'client:read_blog_page' %}" class="bloging-article-profile">
+            <div class="bloging-article-profile-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+            <div class="bloging-article-profile-details">
+                <h3>article name</h3>
+                <hr>
+                <div class="bloging-article-profile-icons">
+                    <button><i class="fas fa-heart"></i>12</button>
+                    <button><i class="fas fa-comment"></i>2</button>
+                </div>
+            </div>
+        </a>
+        <a href="{% url 'client:read_blog_page' %}" class="bloging-article-profile">
+            <div class="bloging-article-profile-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+            <div class="bloging-article-profile-details">
+                <h3>article name</h3>
+                <hr>
+                <div class="bloging-article-profile-icons">
+                    <button><i class="fas fa-heart"></i>12</button>
+                    <button><i class="fas fa-comment"></i>2</button>
+                </div>
+            </div>
+        </a>
+        <a href="{% url 'client:read_blog_page' %}" class="bloging-article-profile">
+            <div class="bloging-article-profile-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+            <div class="bloging-article-profile-details">
+                <h3>article name</h3>
+                <hr>
+                <div class="bloging-article-profile-icons">
+                    <button><i class="fas fa-heart"></i>12</button>
+                    <button><i class="fas fa-comment"></i>2</button>
+                </div>
+            </div>
+        </a>
+        <a href="{% url 'client:read_blog_page' %}" class="bloging-article-profile">
+            <div class="bloging-article-profile-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+            <div class="bloging-article-profile-details">
+                <h3>article name</h3>
+                <hr>
+                <div class="bloging-article-profile-icons">
+                    <button><i class="fas fa-heart"></i>12</button>
+                    <button><i class="fas fa-comment"></i>2</button>
+                </div>
+            </div>
+        </a>
+    </div>
+    <a href="{% url 'client:main_blog_page' %}" class="view-all-blogs"> <i class="fas fa-angle-right"></i> View all blogs</a>
+
+</section>
+
+
+{% include 'partials/client/client_footer.html' %}
+{% endblock content %}
+

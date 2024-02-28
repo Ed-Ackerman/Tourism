@@ -1,0 +1,177 @@
+{% extends 'client_base.html' %}
+
+{% load static %}
+
+{% block title %}
+    Our Impact
+{% endblock title %}
+
+{% block content %}
+
+
+<section class="main-destination-section" >
+    <div class="destination-hero-img" style="background-image: url('{% static 'images/img34.jpg' %}')">
+        <h1>Foustering Sustainability through tourism</h1>
+    </div>
+</section>
+
+<section class="authentic-experience-section">
+    <div class="authentic-experience-photos transition-imgs">
+        <div class="authentic-experience-imgs main-img" style="background-image: url('{% static 'images/img31.jpg' %}')"></div>
+        <div class="authentic-experience-imgs sub-img" style="background-image: url('{% static 'images/img32.jpg' %}')"></div>
+    </div>
+    <div class="authentic-experience-content">
+        <h3>an activity to captivate your heart and soul</h3>
+        <div class="authentic-experience-details">Our accommodation is both luxurious and authentic. We promise unrivalled comfort and exclusivity while staying true to the vibrant soul and spirit of each, unique destination. Our private game viewing areas have limits on guest numbers, meaning fewer vehicles and people, with more intimate and up-close encounters with wildlife in their natural habitat.</div>
+    </div>
+
+</section>
+
+<section class="environment-protection-section">
+    <h3>we area untamed experiences</h3>
+    <h1>our contribution to environmental protection</h1>
+    <div class="environment-protection-details">
+        We're excited to take you on a journey to experience sights and sounds found nowhere else on Earth. Unique scenery, wildlife, and cultures are waiting to be revealed, and we at Wilderness can’t wait to share them with you. Our custom-designed journeys are intended to inspire but can be tailor made to suit your every need. It's time to let your safari dreams run wild
+    </div>
+    <div class="environment-protection-img major" style="background-image: url('{% static 'images/img23.jpeg' %}')"></div>
+    <h1>our contribution to environmental protection</h1>
+    <div class="environment-protection-details">
+        We're excited to take you on a journey to experience sights and sounds found nowhere else on Earth. Unique scenery, wildlife, and cultures are waiting to be revealed, and we at Wilderness can’t wait to share them with you. Our custom-designed journeys are intended to inspire but can be tailor made to suit your every need. It's time to let your safari dreams run wild
+    </div>
+    <div class="environment-photos">
+        <div class="environment-protection-img minor" style="background-image: url('{% static 'images/img24.jpeg' %}')">
+            <h1>Busokwo afforestation project</h1>
+            <a href=""><i class="fa fa-fas fa-plus"></i> visit</a>
+        </div>
+        <div class="environment-protection-img minor" style="background-image: url('{% static 'images/img24.jpeg' %}')">
+            <h1>Kigezi afforestation project</h1>
+            <a href=""><i class="fa fa-fas fa-plus"></i> visit</a>
+        </div>
+        <div class="environment-protection-img minor" style="background-image: url('{% static 'images/img24.jpeg' %}')">
+            <h1>Kigezi afforestation project</h1>
+            <a href=""><i class="fa fa-fas fa-plus"></i> visit</a>
+        </div>
+    </div>
+    <p>showing 2 of 8 results</p>
+    <a href="" class="load-more">load more</a>
+</section>
+
+<section class="conservation-section">
+    <div class="conservation-photos transition-imgs">
+        <div class="conservation-img main-img" style="background-image: url('{% static 'images/img6.jpg' %}')"></div>
+        <div class="conservation-img sub-img" style="background-image: url('{% static 'images/img13.jpg' %}')"></div>
+    </div>
+    <h1>forstering wildlife conservation in east africa</h1>
+    <div class="conservation-details">
+        We're excited to take you on a journey to experience sights and sounds found nowhere else on Earth. Unique scenery, wildlife, and cultures are waiting to be revealed, and we at Wilderness can’t wait to share them with you. Our custom-designed journeys are intended to inspire but can be tailor made to suit your every need. It's time to let your safari dreams run wild
+    </div>
+    <h1>our community development programs</h1>
+    <div class="conservation-details">
+        We're excited to take you on a journey to experience sights and sounds found nowhere else on Earth. Unique scenery, wildlife, and cultures are waiting to be revealed, and we at Wilderness can’t wait to share them with you. Our custom-designed journeys are intended to inspire but can be tailor made to suit your every need. It's time to let your safari dreams run wild
+    </div>
+    <div class="environment-photos">
+        <div class="environment-protection-img minor" style="background-image: url('{% static 'images/img24.jpeg' %}')">
+            <h1>Busokwo afforestation project</h1>
+            <a href=""><i class="fa fa-fas fa-plus"></i> visit</a>
+        </div>
+        <div class="environment-protection-img minor" style="background-image: url('{% static 'images/img24.jpeg' %}')">
+            <h1>Kigezi afforestation project</h1>
+            <a href=""><i class="fa fa-fas fa-plus"></i> visit</a>
+        </div>
+        <div class="environment-protection-img minor" style="background-image: url('{% static 'images/img24.jpeg' %}')">
+            <h1>Kigezi afforestation project</h1>
+            <a href=""><i class="fa fa-fas fa-plus"></i> visit</a>
+        </div>
+    </div>
+    <p>showing 2 of 8 results</p>
+    <a href="" class="load-more">load more</a>
+    <hr style="width: 20%; border-color: #333;">
+    <h1>articles about our impact</h1>
+    <div class="conservation-details">
+        We're excited to take you on a journey to experience sights and sounds found nowhere else on Earth. Unique scenery, wildlife, and cultures are waiting to be revealed, and we at Wilderness can’t wait to share them with you. Our custom-designed journeys are intended to inspire but can be tailor made to suit your every need. It's time to let your safari dreams run wild
+    </div>
+    <div class="bloging-articles">
+        <a href="{% url 'client:read_blog_page' %}" class="bloging-article-profile">
+            <div class="bloging-article-profile-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+            <div class="bloging-article-profile-details">
+                <h3>article name</h3>
+                <p> We're excited to take you on a journey to experience sights and sounds found nowhere else on Earth.</p>
+                <h3>read more</h3>
+                <hr>
+                <div class="bloging-article-profile-icons">
+                    <button><i class="fas fa-heart"></i>12</button>
+                    <button><i class="fas fa-comment"></i>2</button>
+                </div>
+            </div>
+        </a>
+        <a href="{% url 'client:read_blog_page' %}" class="bloging-article-profile">
+            <div class="bloging-article-profile-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+            <div class="bloging-article-profile-details">
+                <h3>article name</h3>
+                <p> We're excited to take you on a journey to experience sights and sounds found nowhere else on Earth.</p>
+                <h3>read more</h3>
+                
+                <hr>
+                <div class="bloging-article-profile-icons">
+                    <button><i class="fas fa-heart"></i>12</button>
+                    <button><i class="fas fa-comment"></i>2</button>
+                </div>
+            </div>
+        </a>
+        <a href="{% url 'client:read_blog_page' %}" class="bloging-article-profile">
+            <div class="bloging-article-profile-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+            <div class="bloging-article-profile-details">
+                <h3>article name</h3>
+                <p> We're excited to take you on a journey to experience sights and sounds found nowhere else on Earth.</p>
+                <h3>read more</h3>
+                
+                <hr>
+                <div class="bloging-article-profile-icons">
+                    <button><i class="fas fa-heart"></i>12</button>
+                    <button><i class="fas fa-comment"></i>2</button>
+                </div>
+            </div>
+        </a>
+        <a href="{% url 'client:read_blog_page' %}" class="bloging-article-profile">
+            <div class="bloging-article-profile-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+            <div class="bloging-article-profile-details">
+                <h3>article name</h3>
+                <p> We're excited to take you on a journey to experience sights and sounds found nowhere else on Earth.</p>
+                <h3>read more</h3>
+                
+                <hr>
+                <div class="bloging-article-profile-icons">
+                    <button><i class="fas fa-heart"></i>12</button>
+                    <button><i class="fas fa-comment"></i>2</button>
+                </div>
+            </div>
+        </a>
+    </div>
+    <a href="{% url 'client:main_blog_page' %}" class="read-more"><i class="fa fa-plus"></i> read more</a>
+</section>
+
+<section class="counter-section">
+    <div class="counter-profile">
+        <div class="counter-icons" style="background-image: url('{% static 'images/icon1.png' %}')"></div>
+        <div class="counter-number">6</div>
+        <div class="counter-name">African countries</div>
+    </div>
+    <div class="counter-profile">
+        <div class="counter-icons" style="background-image: url('{% static 'images/icon4.png' %}')"></div>
+        <div class="counter-number">60+</div>
+        <div class="counter-name">Camps and lodges</div>
+    </div>
+    <div class="counter-profile">
+        <div class="counter-icons" style="background-image: url('{% static 'images/icon3.png' %}')"></div>
+        <div class="counter-number">100+</div>
+        <div class="counter-name">Staff employed</div>
+    </div>
+    <div class="counter-profile">
+        <div class="counter-icons" style="background-image: url('{% static 'images/icon2.png' %}')"></div>
+        <div class="counter-number">100K+</div>
+        <div class="counter-name">Guests hosted per year</div>
+    </div>
+</section>
+
+{% include 'partials/client/client_footer.html' %}
+{% endblock content %}

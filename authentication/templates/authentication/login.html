@@ -1,0 +1,40 @@
+{% extends 'auth_base.html' %}
+
+{% load static %}
+
+{% block title %}
+    Scared Gem Safaris - Login
+{% endblock title %}
+
+{% block content %}
+    <div class="signup-section" style="background-image: url('{% static 'images/lion1.jpg' %}')">
+        <div class="dark-overlay"></div>
+        <form action="{% url 'authentication:login' %}" method="post" class="auth-form">
+            <legend class="auth-legend" >Login</legend>
+            {% for message in messages %}
+                <div class="alert
+                    {% if message.tags == 'success' %} alert-success
+                    {% elif message.tags == 'error' %} alert-danger
+                    {% else %} alert-info
+                    {% endif %}
+                    fade-message">
+                    {{ message }}
+                </div>
+            {% endfor %}
+            {% csrf_token %}
+            <div class="form-input-group ">
+                <label for="id_username">Username / Email:</label>
+                <input type="text" name="username" id="id_username" required>
+            </div>
+            <div class="form-input-group ">
+                <label for="id_password">Password:</label>
+                <input type="password" name="password" id="id_password" required>
+            </div>
+            <label for="id_confirm_password">Remeber Me</label>
+            <input type="checkbox" name="remember_me">
+            <button type="submit" class="auth-btn">Login</button>
+            <small>Don't have an account</small> <a href="{% url 'authentication:signup' %}">SignUp</a>
+        </form>
+    </div>
+{% endblock content %}
+

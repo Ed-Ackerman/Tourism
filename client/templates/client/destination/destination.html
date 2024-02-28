@@ -1,0 +1,328 @@
+{% extends 'client_base.html' %}
+
+{% load static %}
+
+{% block title %}
+    Destinations
+{% endblock title %}
+
+{% block content %}
+
+<section class="main-destination-section" >
+    <div class="destination-hero-img" style="background-image: url('{% static 'images/elephant2.jpg' %}')">
+        <h1>Destination Wild</h1>
+    </div>
+</section>
+
+<section class="exploration-section">
+    <div class="exploration-unique">
+        <div class="exploration-uinque-content">
+            <h1>QUICK DESCRIPTION</h1>
+            <div class="exploration-unique-details">
+                Live out a desert fantasy on safari in Namibia. Climb ancient dunes of red sand, rising out of the Namib Desert. Feel the thrill of tracking desert-adapted black rhinos on foot with our expert guides. Wander along the Skeleton Coast, wild, windswept and seemingly stretching to infinity. Marvel at the wonders of Damaraland's Petrified Forest with trees as old as 280 million years.
+            </div>
+        </div>
+        <div class="exploration-uinque-img" style="background-image: url('{% static 'images/img11.jpg' %}')"></div>
+    </div>
+   <hr>
+</section>
+
+{% comment %} <section class="exploration-curosel-section" id="carousel1">
+    <div class="exploration-curosel-content">
+        <div class="exploration-curosel-headings">
+            <h3>where will you journey next</h3>
+            <h1>a glance of your next destination</h1>
+        </div>
+        <div class="exploration-curosel-details">
+            Going off the beaten track comes with questions. When is the best season to view wildlife in Namibia? How cold does it get at night and what languages are spoken? To help you prepare for your journey, we have put together a few keys facts to encourage your adventurous spirit.
+        </div>
+    </div>
+    <hr>
+    <div class="exploration-curosel">
+        <div class="exploration-sliders">
+            <div class="exploration-slide">
+                <div class="exploration-slide-img" style="background-image: url('{% static 'images/img1.jpg' %}')"></div>
+                <h3>name 1</h3>
+                <div class="exploration-sites">
+                    <p>Exploration sites</p>
+                    <p>Exploration sites</p>
+                    <p>Exploration sites</p>
+                    <p>Exploration sites</p>
+                </div>
+            </div>
+            <div class="exploration-slide">
+                <div class="exploration-slide-img" style="background-image: url('{% static 'images/img18.jpg' %}')"></div>
+                <h3>name 2</h3>
+                <div class="exploration-sites">
+                    <p>Exploration sites</p>
+                    <p>Exploration sites</p>
+                    <p>Exploration sites</p>
+                </div>
+            </div>
+            <div class="exploration-slide">
+                <div class="exploration-slide-img" style="background-image: url('{% static 'images/img22.jpg' %}')"></div>
+                <h3>name 3</h3>
+                <div class="exploration-sites">
+                    <p>Exploration sites</p>
+                    <p>Exploration sites</p>
+                    <p>Exploration sites</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="exploration-curosel-controls">
+        <button class="prev"><i class="fa fa-arrow-left"></i></button>
+        <button class="next"><i class="fa fa-arrow-right"></i></button>
+    </div>
+</section> {% endcomment %}
+{% comment %} 
+<section class="safari-experience-section">
+    <div class="safari-experience-info">
+        <div class="safari-experience-packages">
+            <h3>Your experience</h3>
+            <h1>What you will experience and make unfogatable memories</h1>
+            <div class="safari-experience-text"> Our accommodation is both luxurious and authentic. We promise unrivalled comfort and exclusivity while staying true to the vibrant soul and spirit of each, unique destination. Our private game viewing areas have limits on guest numbers, meaning fewer vehicles and people, with more intimate and up-close encounters with wildlife in their natural habitat.</div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="experience-carousel">
+        <div class="experience-profile">
+            <div class="experience-top-profile"></div>
+            <div class="experience-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+            <div class="experience-details">
+                <h3>Name 1</h3>
+                <div class="experience-description">What you will experience and make unforgettable memories</div>
+                <hr>
+                <a href="{% url 'client:journey_details' %}"> <i class="fas fa-map-marker"></i> Name 1</a>
+            </div>
+        </div>
+        <div class="experience-profile">
+            <div class="experience-top-profile"></div>
+            <div class="experience-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+            <div class="experience-details">
+                <h3>Name 2</h3>
+                <div class="experience-description">What you will experience and make unforgettable memories</div>
+                <hr>
+                <a href="{% url 'client:journey_details' %}"> <i class="fas fa-map-marker"></i> Name 2</a>
+            </div>
+        </div>
+        <div class="experience-profile">
+            <div class="experience-top-profile"></div>
+            <div class="experience-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+            <div class="experience-details">
+                <h3>Name 3</h3>
+                <div class="experience-description">What you will experience and make unforgettable memories</div>
+                <hr>
+                <a href="{% url 'client:journey_details' %}"> <i class="fas fa-map-marker"></i> Name 3</a>
+            </div>
+        </div>      
+        <div class="experience-profile">
+            <div class="experience-top-profile"></div>
+            <div class="experience-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+            <div class="experience-details">
+                <h3>Name 4</h3>
+                <div class="experience-description">What you will experience and make unforgettable memories</div>
+                <hr>
+                <a href="{% url 'client:journey_details' %}"> <i class="fas fa-map-marker"></i> Name 4</a>
+            </div>
+        </div>      
+        <div class="experience-profile">
+            <div class="experience-top-profile"></div>
+            <div class="experience-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+            <div class="experience-details">
+                <h3>Name 5</h3>
+                <div class="experience-description">What you will experience and make unforgettable memories</div>
+                <hr>
+                <a href="{% url 'client:journey_details' %}"> <i class="fas fa-map-marker"></i> Name 5</a>
+            </div>
+        </div>      
+        <button class="experience-btn prev-btn">&lt;</button>
+        <button class="experience-btn next-btn">&gt;</button>
+
+        <a href="{% url 'client:view_journey_page' %}" class="experience-all-packages">View all packages <i class="fas fa-arrow-right"></i></a>
+
+    </div>
+
+</section> {% endcomment %}
+
+{% comment %} <section class="safari-journey-section" style="background-image: url('{% static 'images/lion1.jpg' %}')">
+    <h3>Lets take you on an unfogatable journey</h3>
+    <h1>Tailor-made itineraries for every traveller</h1>
+    <div class="safari-journey-text">We're excited to take you on a journey to experience sights and sounds found nowhere else on Earth. Unique scenery, wildlife, and cultures are waiting to be revealed, and we at Wilderness can’t wait to share them with you. Our custom-designed journeys are intended to inspire but can be tailor made to suit your every need. It's time to let your safari dreams run wild.</div>
+    <a href="{% url 'client:progess_form' %}">Begin exploring</a>
+</section> {% endcomment %}
+
+<section class="destination-insight-section">
+    <div class="insgiht-photos transition-imgs">
+        <div class="insight-img main-img" style="background-image: url('{% static 'images/img29.jpg' %}')"></div>
+        <div class="insight-img sub-img" style="background-image: url('{% static 'images/img11.jpg' %}')"></div>
+    </div>
+    <h1>Quick insight into East Africa</h1>
+    <div class="insight-content">
+        Live out a desert fantasy on safari in Namibia. Climb ancient dunes of red sand, rising out of the Namib Desert. Feel the thrill of tracking desert-adapted black rhinos on foot with our expert guides. Wander along the Skeleton Coast, wild, windswept and seemingly stretching to infinity. Marvel at the wonders of Damaraland's Petrified Forest with trees as old as 280 million years.
+    </div>
+    <div class="safari-iconic-dropdown-section">
+        <div class="dropdown-btns">
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">wildlife <i class="fas fa-angle-down"></i></button>
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">architecture <i class="fas fa-angle-down"></i></button>
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">culture <i class="fas fa-angle-down"></i></button>
+            <button class="dropdown-btn" onclick="toggleDropdown(this)">professionalism <i class="fas fa-angle-down"></i></button>
+        </div>
+        <hr>
+        <div class="dropdown-content">
+            <div class="dropdown-content-img" style="background-image: url('{% static 'images/img16.jpg' %}')"></div>
+            <div class="dropdown-content-detail">
+                <h1>incredible wildlife encounter</h1>
+                <div class="dropdown-content-message">
+                    Our accommodation is both luxurious and authentic. We promise unrivalled comfort and exclusivity while staying true to the vibrant soul and spirit of each, unique destination. Our private game viewing areas have limits on guest numbers, meaning fewer vehicles and people, with more intimate and up-close encounters with wildlife in their natural habitat.
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown-content">
+            <div class="dropdown-content-img" style="background-image: url('{% static 'images/img29.jpg' %}')"></div>
+            <div class="dropdown-content-detail">
+                <h1>incredible architecture</h1>
+                <div class="dropdown-content-message">
+                    Our accommodation is both luxurious and authentic. We promise unrivalled comfort and exclusivity while staying true to the vibrant soul and spirit of each, unique destination. Our private game viewing areas have limits on guest numbers, meaning fewer vehicles and people, with more intimate and up-close encounters with wildlife in their natural habitat.
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown-content">
+            <div class="dropdown-content-img" style="background-image: url('{% static 'images/img17.jpg' %}')"></div>
+            <div class="dropdown-content-detail">
+                <h1>magineficent culture</h1>
+                <div class="dropdown-content-message">
+                    Our accommodation is both luxurious and authentic. We promise unrivalled comfort and exclusivity while staying true to the vibrant soul and spirit of each, unique destination. Our private game viewing areas have limits on guest numbers, meaning fewer vehicles and people, with more intimate and up-close encounters with wildlife in their natural habitat.
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown-content">
+            <div class="dropdown-content-img" style="background-image: url('{% static 'images/img13.jpg' %}')"></div>
+            <div class="dropdown-content-detail">
+                <h1>our professionalism</h1>
+                <div class="dropdown-content-message">
+                    Our accommodation is both luxurious and authentic. We promise unrivalled comfort and exclusivity while staying true to the vibrant soul and spirit of each, unique destination. Our private game viewing areas have limits on guest numbers, meaning fewer vehicles and people, with more intimate and up-close encounters with wildlife in their natural habitat.
+                </div>
+            </div>
+        </div>
+    </div> 
+</section>
+
+{% comment %} <section class="exploration-map-section">
+    <div class="map-content">
+        <div class="map-heading">
+            <h3>map</h3>
+            <h1>Explore regions & camps</h1>
+        </div>
+        <div class="map-details">
+            Situated along the Atlantic coastline, Namibia is the fifth largest country in Africa. It shares land borders with Angola and Zambia to the north, Botswana to the east and South Africa to the south. Our luxurious, remote and intimate camps are found across Damaraland, Sossusvlei, the Hoanib and Skeleton Coast, and the banks of the Kunene River in the Hartmann's Valley.
+        </div>
+    </div>
+    <div class="map-view">
+        <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=33.8068%2C-5.0573%2C51.7224%2C11.7336&amp;layer=mapnik"></iframe>
+      </div>
+      
+</section> {% endcomment %}
+
+<section class="best-destination-section">
+    <h1>Our iconic destinations</h1>
+    <div class="best-destination-content">
+        Live out a desert fantasy on safari in Namibia. Climb ancient dunes of red sand, rising out of the Namib Desert. Feel the thrill of tracking desert-adapted black rhinos on foot with our expert guides. Wander along the Skeleton Coast, wild, windswept and seemingly stretching to infinity. Marvel at the wonders of Damaraland's Petrified Forest with trees as old as 280 million years.
+    </div>
+    <div class="best-destination-img-container">
+        <div class="best-destination-img-slider">
+          <a href="{% url 'client:particular_destination_page' %}" class="best-destination-img" style="background-image: url('{% static 'images/img11.jpg' %}')">
+            <div class="best-destination-name">Kidepo NP</div>
+          </a>
+          <a href="{% url 'client:particular_destination_page' %}" class="best-destination-img" style="background-image: url('{% static 'images/img14.jpg' %}')">
+            <div class="best-destination-name">Marchison Falls NP</div>
+          </a>
+          <a href="{% url 'client:particular_destination_page' %}" class="best-destination-img" style="background-image: url('{% static 'images/img16.jpg' %}')">
+            <div class="best-destination-name">Kidepo NP</div>
+          </a>
+          <a href="{% url 'client:particular_destination_page' %}" class="best-destination-img" style="background-image: url('{% static 'images/img20.jpg' %}')">
+            <div class="best-destination-name">Marchison Falls NP</div>
+          </a>
+          <a href="{% url 'client:particular_destination_page' %}" class="best-destination-img" style="background-image: url('{% static 'images/img25.jpg' %}')">
+            <div class="best-destination-name">Kidepo NP</div>
+          </a>
+        
+        </div>
+    </div>
+    <div class="control-btn">
+        <button class="prev best-destination-btn" onclick="prevSlide()"><i class="fa fa-angle-left"></i></button>
+        <button class="next best-destination-btn" onclick="nextSlide()"><i class="fa fa-angle-right"></i></button>
+    </div>
+</section>
+
+<section class="tours-section">
+    
+    <div class="tours-img" style="background-image: url('{% static 'images/img20.jpg' %}')">
+        <h1>an experience for every taste</h1>
+    </div>
+    <div class="tours-content">
+        Live out a desert fantasy on safari in Namibia. Climb ancient dunes of red sand, rising out of the Namib Desert. Feel the thrill of tracking desert-adapted black rhinos on foot with our expert guides. Wander along the Skeleton Coast, wild, windswept and seemingly stretching to infinity. Marvel at the wonders of Damaraland's Petrified Forest with trees as old as 280 million years.
+    </div>
+    <a href=""><i class="fas fa-angle-right"></i> view our experiences</a>
+</section>
+ 
+<section class="bloging-article-categories blogs">
+    <h1>stories and blogs</h1> 
+    <div class="bloging-articles">
+        <a href="{% url 'client:read_blog_page' %}" class="bloging-article-profile">
+            <div class="bloging-article-profile-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+            <div class="bloging-article-profile-details">
+                <h3>article name</h3>
+                <hr>
+                <div class="bloging-article-profile-icons">
+                    <button><i class="fas fa-heart"></i>12</button>
+                    <button><i class="fas fa-comment"></i>2</button>
+                </div>
+            </div>
+        </a>
+        <a href="{% url 'client:read_blog_page' %}" class="bloging-article-profile">
+            <div class="bloging-article-profile-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+            <div class="bloging-article-profile-details">
+                <h3>article name</h3>
+                <hr>
+                <div class="bloging-article-profile-icons">
+                    <button><i class="fas fa-heart"></i>12</button>
+                    <button><i class="fas fa-comment"></i>2</button>
+                </div>
+            </div>
+        </a>
+        <a href="{% url 'client:read_blog_page' %}" class="bloging-article-profile">
+            <div class="bloging-article-profile-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+            <div class="bloging-article-profile-details">
+                <h3>article name</h3>
+                <hr>
+                <div class="bloging-article-profile-icons">
+                    <button><i class="fas fa-heart"></i>12</button>
+                    <button><i class="fas fa-comment"></i>2</button>
+                </div>
+            </div>
+        </a>
+        <a href="{% url 'client:read_blog_page' %}" class="bloging-article-profile">
+            <div class="bloging-article-profile-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+            <div class="bloging-article-profile-details">
+                <h3>article name</h3>
+                <hr>
+                <div class="bloging-article-profile-icons">
+                    <button><i class="fas fa-heart"></i>12</button>
+                    <button><i class="fas fa-comment"></i>2</button>
+                </div>
+            </div>
+        </a>
+    </div>
+    <a href="{% url 'client:main_blog_page' %}" class="view-all-blogs"> <i class="fas fa-angle-right"></i> View all blogs</a>
+
+</section>
+
+
+{% include 'partials/client/client_footer.html' %}
+{% endblock content %}

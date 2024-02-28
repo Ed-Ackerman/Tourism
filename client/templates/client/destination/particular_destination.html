@@ -1,0 +1,206 @@
+{% extends 'client_base.html' %}
+
+{% load static %}
+
+{% block title %}
+    Name Destinations
+{% endblock title %}
+
+{% block content %}
+
+<section class="main-destination-section" >
+    <div class="destination-hero-img" style="background-image: url('{% static 'images/elephant2.jpg' %}')">
+        <h1>Destination Wild</h1>
+    </div>
+</section>
+
+<section class="exploration-section">
+    <div class="exploration-unique">
+        <div class="exploration-uinque-content">
+            <h1>QUICK DESCRIPTION</h1>
+            <div class="exploration-unique-details">
+                Live out a desert fantasy on safari in Namibia. Climb ancient dunes of red sand, rising out of the Namib Desert. Feel the thrill of tracking desert-adapted black rhinos on foot with our expert guides. Wander along the Skeleton Coast, wild, windswept and seemingly stretching to infinity. Marvel at the wonders of Damaraland's Petrified Forest with trees as old as 280 million years.
+            </div>
+        </div>
+        <div class="exploration-uinque-img" style="background-image: url('{% static 'images/img11.jpg' %}')"></div>
+    </div>
+   <hr>
+</section>
+
+<section class="glance-paticular-destination-section">
+    <h1>Marchison falls national park at a glance</h1>
+    <div class="glance-gallery transition-imgs">
+        <div class="glance-gallery-content main-img">
+            <div class="glance-gallery-img img-1" style="background-image: url('{% static 'images/img17.jpg' %}')"></div>
+            <div class="glance-gallery-details">
+                <h3>The mighty machison falls</h3>
+                <hr>
+                <p>taken on a trip with alsion K</p>
+            </div>
+        </div>
+        <div class="glance-gallery-content sub-img">
+            <div class="glance-gallery-img img-2" style="background-image: url('{% static 'images/img6.jpg' %}')"></div>
+            <div class="glance-gallery-details">
+                <h3>The mighty machison falls</h3>
+                <hr>
+                <p>taken on a trip with alsion K</p>
+            </div>
+        </div>
+    </div>
+    <div class="glance-gallery">
+        <div class="glance-gallery-content main-img">
+            <div class="glance-gallery-img img-1" style="background-image: url('{% static 'images/img28.jpg' %}')"></div>
+            <div class="glance-gallery-details">
+                <h3>The mighty machison falls</h3>
+                <hr>
+                <p>taken on a trip with alsion K</p>
+            </div>
+        </div>
+        <blockquote class="glance-quote">
+            <p>"Travel makes one modest, you see what a tiny place you occupy in the world."</p>
+            <footer>- Gustave Flaubert</footer>
+        </blockquote>
+          
+    </div>
+</section>
+
+<section class="paticular-destination-packges-section">
+    <h1>explore the machison falls np packages</h1>
+    <hr>
+    <div class="paticular-destination-packges">
+        <a href="" class="paticular-destination-packges-profiles">
+            <div class="paticular-destination-profile-img" style="background-image: url('{% static 'images/img16.jpg' %}')"></div>
+            <div class="paticular-destination-profile-details">
+                <h3>name</h3>
+                <hr>
+                <p>
+                    <i class="fa fa-far fa-dot-circle"></i>
+                    12 Days
+                </p>
+                <p>
+                    <i class="fa fa-far fa-dot-circle"></i>
+                    3-6 People
+                </p>
+                <p>
+                    <i class="fa fa-far fa-dot-circle"></i>
+                    USD 3000/person
+                </p>
+                
+            </div>
+        </a>
+        <a href="" class="paticular-destination-packges-profiles">
+            <div class="paticular-destination-profile-img" style="background-image: url('{% static 'images/img20.jpg' %}')"></div>
+            <div class="paticular-destination-profile-details">
+                <h3>name</h3>
+                <hr>
+                <p>
+                    <i class="fa fa-far fa-dot-circle"></i>
+                    12 Days
+                </p>
+                <p>
+                    <i class="fa fa-far fa-dot-circle"></i>
+                    3-6 People
+                </p>
+                <p>
+                    <i class="fa fa-far fa-dot-circle"></i>
+                    USD 3000/person
+                </p>            
+            </div>
+        </a>
+        <a href="" class="paticular-destination-packges-profiles">
+            <div class="paticular-destination-profile-img" style="background-image: url('{% static 'images/img10.jpg' %}')"></div>
+            <div class="paticular-destination-profile-details">
+                <h3>name</h3>
+                <hr>
+                <p>
+                    <i class="fa fa-far fa-dot-circle"></i>
+                    12 Days
+                </p>
+                <p>
+                    <i class="fa fa-far fa-dot-circle"></i>
+                    3-6 People
+                </p>
+                <p>
+                    <i class="fa fa-far fa-dot-circle"></i>
+                    USD 3000/person
+                </p>            
+            </div>
+        </a>
+        <a href="" class="paticular-destination-packges-profiles">
+            <div class="paticular-destination-profile-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+            <div class="paticular-destination-profile-details">
+                <h3>name</h3>
+                <hr>
+                <p>
+                    <i class="fa fa-far fa-dot-circle"></i>
+                    12 Days
+                </p>
+                <p>
+                    <i class="fa fa-far fa-dot-circle"></i>
+                    3-6 People
+                </p>
+                <p>
+                    <i class="fa fa-far fa-dot-circle"></i>
+                    USD 3000/person
+                </p>            
+            </div>
+        </a>
+    </div>
+</section>
+
+
+<section class="bloging-article-categories blogs">
+    <h1>stories and blogs</h1> 
+    <div class="bloging-articles">
+        <a href="{% url 'client:read_blog_page' %}" class="bloging-article-profile">
+            <div class="bloging-article-profile-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+            <div class="bloging-article-profile-details">
+                <h3>article name</h3>
+                <hr>
+                <div class="bloging-article-profile-icons">
+                    <button><i class="fas fa-heart"></i>12</button>
+                    <button><i class="fas fa-comment"></i>2</button>
+                </div>
+            </div>
+        </a>
+        <a href="{% url 'client:read_blog_page' %}" class="bloging-article-profile">
+            <div class="bloging-article-profile-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+            <div class="bloging-article-profile-details">
+                <h3>article name</h3>
+                <hr>
+                <div class="bloging-article-profile-icons">
+                    <button><i class="fas fa-heart"></i>12</button>
+                    <button><i class="fas fa-comment"></i>2</button>
+                </div>
+            </div>
+        </a>
+        <a href="{% url 'client:read_blog_page' %}" class="bloging-article-profile">
+            <div class="bloging-article-profile-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+            <div class="bloging-article-profile-details">
+                <h3>article name</h3>
+                <hr>
+                <div class="bloging-article-profile-icons">
+                    <button><i class="fas fa-heart"></i>12</button>
+                    <button><i class="fas fa-comment"></i>2</button>
+                </div>
+            </div>
+        </a>
+        <a href="{% url 'client:read_blog_page' %}" class="bloging-article-profile">
+            <div class="bloging-article-profile-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+            <div class="bloging-article-profile-details">
+                <h3>article name</h3>
+                <hr>
+                <div class="bloging-article-profile-icons">
+                    <button><i class="fas fa-heart"></i>12</button>
+                    <button><i class="fas fa-comment"></i>2</button>
+                </div>
+            </div>
+        </a>
+    </div>
+    <a href="{% url 'client:main_blog_page' %}" class="view-all-blogs"> <i class="fas fa-angle-right"></i> View all blogs</a>
+
+</section>
+
+
+{% include 'partials/client/client_footer.html' %}
+{% endblock content %}

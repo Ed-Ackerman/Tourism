@@ -1,0 +1,263 @@
+{% extends 'client_base.html' %}
+
+{% load static %}
+
+{% block title %}
+    Sacred Gem Safaris
+{% endblock title %}
+
+{% block content %}
+    
+    <section class="hero-section">
+        <video width="100%" height="100%" autoplay loop muted>
+            <source src="{{ MEDIA_URL }}/media/africa.mp4" type="video/mp4">
+        </video>
+        <div class="slogan">
+            <div class="slogan-top">experience the</div>
+            <div class="slogan-bottom">untamed moment</div>
+            <hr style="width: 50%;">
+            <div class="slogan-journey">Let us take you on an unrivalled journey through a collection of the world's most iconic wild destinations.</div>
+        </div>
+    </section>
+    
+
+    <section class="safari-intro-section">
+
+        <div class="safari-intro-photos transition-imgs">
+            <div class="safari-intro-img major-img" style="background-image: url('{% static 'images/img30.jpg' %}')"></div>
+            <div class="safari-intro-img sub-img" style="background-image: url('{% static 'images/img2.jpg' %}')"></div>
+        </div>
+
+        <div class="safari-intro-content">
+            <h3>We are Sacred gem safari</h3>
+            <h1>Your number one tour companion Discover Africa's ultimate, untamed places</h1>
+            <div class="safari-intro-text">
+                Welcome to Sacred Gem Safari, your premier destination for exploring Africa's untamed wonders! As the world's leading conservation and hospitality company, we proudly safeguard our planet's significant wild places. Our vast, remote destinations offer true wilderness experiences across 6 million acres of private land. Recently rebranded from Wilderness Safaris to Wilderness, we maintain the same core values and unwavering commitment to conservation. Join us for intimate wildlife encounters that promise to change you forever. Embrace the new era of discovery with Sacred Gem Safari!
+            </div>
+        </div>
+
+    </section>
+
+    <section class="destination-section">
+        <h1>Your Top Destinations</h1>
+        <div class="destination-text">
+            Our 60+ camps in 8 African countries promise exclusive, private wild game viewing, unrivalled style, comfort and a range of activities for a full immersion in nature and local culture.
+        </div>
+        <div class="destination-curosel">
+            <div class="destination-curosel-profile">
+                <div class="destination-name">Location 1</div>
+                <div class="destination-img" style="background-image: url('{% static 'images/img1.jpg' %}')"></div>
+                <div class="destination-info">                    
+                    <a href="{% url 'client:main_destination_page'%}">Visit Location 1</a>
+                </div>
+            </div>
+            <div class="destination-curosel-profile">
+                <div class="destination-name">Location 2</div>
+                <div class="destination-img" style="background-image: url('{% static 'images/img19.jpg' %}')"></div>
+                <div class="destination-info">
+                    <a href="{% url 'client:main_destination_page'%}">Visit Location 2</a>
+                </div>
+            </div>
+            <div class="destination-curosel-profile">
+                <div class="destination-name">Location 3</div>
+                <div class="destination-img" style="background-image: url('{% static 'images/img22.jpg' %}')"></div>
+                <div class="destination-info">
+                    <a href="{% url 'client:main_destination_page'%}">Visit Location 3</a>
+                </div>
+            </div>
+            <div class="control-btn">
+                <button class="experience-btn  prev-btn"><i class="fa fa-angle-left"></i></button>
+                <button class="experience-btn  next-btn"><i class="fa fa-angle-right"></i></button>
+            </div>
+      
+        </div>
+
+    </section>
+
+    <section class="safari-journey-section" style="background-image: url('{% static 'images/lion1.jpg' %}')">
+        <h1>Tailor-made itineraries for every traveller</h1>
+        <div class="safari-journey-text home-page">We're excited to take you on a journey to experience sights and sounds found nowhere else on Earth. Unique scenery, wildlife, and cultures are waiting to be revealed, and we at Wilderness can’t wait to share them with you. Our custom-designed journeys are intended to inspire but can be tailor made to suit your every need. It's time to let your safari dreams run wild.</div>
+        <a href="{% url 'client:particular_experience_page' %}" class="scrollable-link">
+            <span class="text">Begin exploring</span>
+            <i class="fa fa-angle-right"></i>
+        </a>
+        
+    </section>  
+
+    <section class="safari-experience-section">
+        <div class="safari-experience-info">
+            <div class="safari-experience-packages">
+                <h1>What you will experience and make unfogatable memories</h1>
+                <div class="safari-experience-text"> Our accommodation is both luxurious and authentic. We promise unrivalled comfort and exclusivity while staying true to the vibrant soul and spirit of each, unique destination. Our private game viewing areas have limits on guest numbers, meaning fewer vehicles and people, with more intimate and up-close encounters with wildlife in their natural habitat.</div>
+            </div>
+        </div>
+
+        <div class="experience-carousel">
+            <a href="{% url 'client:intinerary' %}" class="experience-profile">
+                <div class="experience-top-profile"></div>
+                <div class="experience-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+                <div class="experience-details">
+                    <h3>Name 1</h3>
+                    <div class="experience-description">What you will experience and make unforgettable memories</div>
+                    <hr>
+                    <div class="experience-location"> <i class="fas fa-map-marker"></i> Name 1</div>
+                </div>
+            </a>
+            <a href="{% url 'client:intinerary' %}" class="experience-profile">
+                <div class="experience-top-profile"></div>
+                <div class="experience-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+                <div class="experience-details">
+                    <h3>Name 2</h3>
+                    <div class="experience-description">What you will experience and make unforgettable memories</div>
+                    <hr>
+                    <div class="experience-location"> <i class="fas fa-map-marker"></i> Name 2</div>
+                </div>
+            </a>
+            <a href="{% url 'client:intinerary' %}" class="experience-profile">
+                <div class="experience-top-profile"></div>
+                <div class="experience-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+                <div class="experience-details">
+                    <h3>Name 3</h3>
+                    <div class="experience-description">What you will experience and make unforgettable memories</div>
+                    <hr>
+                    <div class="experience-location"> <i class="fas fa-map-marker"></i> Name 3</div>
+                </div>
+            </a>
+               
+            <a href="{% url 'client:intinerary' %}" class="experience-profile">
+                <div class="experience-top-profile"></div>
+                <div class="experience-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+                <div class="experience-details">
+                    <h3>Name 4</h3>
+                    <div class="experience-description">What you will experience and make unforgettable memories</div>
+                    <hr>
+                    <div class="experience-location"> <i class="fas fa-map-marker"></i> Name 4</div>
+                </div>
+            </a>      
+            <a href="{% url 'client:intinerary' %}" class="experience-profile">
+                <div class="experience-top-profile"></div>
+                <div class="experience-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
+                <div class="experience-details">
+                    <h3>Name 5</h3>
+                    <div class="experience-description">What you will experience and make unforgettable memories</div>
+                    <hr>
+                    <div class="experience-location"> <i class="fas fa-map-marker"></i> Name 5</div>
+                </div>
+            </a>      
+            <div class="control-btn">
+                <button class="experience-btn  prev-btn"><i class="fa fa-angle-left"></i></button>
+                <button class="experience-btn  next-btn"><i class="fa fa-angle-right"></i></button>
+            </div>
+      
+
+            <a href="{% url 'client:main_experience_page' %}" class="experience-all-packages">  <i class="fas fa-angle-right"></i> View all packages</a>
+
+        </div>
+
+    </section>
+
+    <section class="safari-iconic-section">
+        <div class="safari-iconic-section-img" style="background-image: url('{% static 'images/img5.jpg' %}')"></div>
+        <h1>why travel with us</h1>
+        <div class="iconic-message">
+            Our accommodation is both luxurious and authentic. We promise unrivalled comfort and exclusivity while staying true to the vibrant soul and spirit of each, unique destination. Our private game viewing areas have limits on guest numbers, meaning fewer vehicles and people, with more intimate and up-close encounters with wildlife in their natural habitat.
+        </div>
+        <div class="safari-iconic-dropdown-section">
+            <div class="dropdown-btns">
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">wildlife <i class="fas fa-angle-down"></i></button>
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">architecture <i class="fas fa-angle-down"></i></button>
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">culture <i class="fas fa-angle-down"></i></button>
+                <button class="dropdown-btn" onclick="toggleDropdown(this)">professionalism <i class="fas fa-angle-down"></i></button>
+            </div>
+            <hr>
+            <div class="dropdown-content">
+                <div class="dropdown-content-img" style="background-image: url('{% static 'images/img16.jpg' %}')"></div>
+                <div class="dropdown-content-detail">
+                    <h1>incredible wildlife encounter</h1>
+                    <div class="dropdown-content-message">
+                        Our accommodation is both luxurious and authentic. We promise unrivalled comfort and exclusivity while staying true to the vibrant soul and spirit of each, unique destination. Our private game viewing areas have limits on guest numbers, meaning fewer vehicles and people, with more intimate and up-close encounters with wildlife in their natural habitat.
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown-content">
+                <div class="dropdown-content-img" style="background-image: url('{% static 'images/img29.jpg' %}')"></div>
+                <div class="dropdown-content-detail">
+                    <h1>incredible architecture</h1>
+                    <div class="dropdown-content-message">
+                        Our accommodation is both luxurious and authentic. We promise unrivalled comfort and exclusivity while staying true to the vibrant soul and spirit of each, unique destination. Our private game viewing areas have limits on guest numbers, meaning fewer vehicles and people, with more intimate and up-close encounters with wildlife in their natural habitat.
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown-content">
+                <div class="dropdown-content-img" style="background-image: url('{% static 'images/img17.jpg' %}')"></div>
+                <div class="dropdown-content-detail">
+                    <h1>magineficent culture</h1>
+                    <div class="dropdown-content-message">
+                        Our accommodation is both luxurious and authentic. We promise unrivalled comfort and exclusivity while staying true to the vibrant soul and spirit of each, unique destination. Our private game viewing areas have limits on guest numbers, meaning fewer vehicles and people, with more intimate and up-close encounters with wildlife in their natural habitat.
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown-content">
+                <div class="dropdown-content-img" style="background-image: url('{% static 'images/img13.jpg' %}')"></div>
+                <div class="dropdown-content-detail">
+                    <h1>our professionalism</h1>
+                    <div class="dropdown-content-message">
+                        Our accommodation is both luxurious and authentic. We promise unrivalled comfort and exclusivity while staying true to the vibrant soul and spirit of each, unique destination. Our private game viewing areas have limits on guest numbers, meaning fewer vehicles and people, with more intimate and up-close encounters with wildlife in their natural habitat.
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <section class="safari-impact-section">
+        <div class="impact-info">
+            <div class="impact-heading">
+                <h1>we aren't just a tour agency</h1>
+            </div>
+        </div>
+        <hr>
+        <div class="impact-content">
+            <div class="impact-photos transition-imgs">
+                <div class="impact-img img1 main-img" style="background-image: url('{% static 'images/img4.jpg' %}')"></div>
+            </div>
+            <div class="impact-details">
+                <h1>Shared impact</h1>
+                <div class="impact-message">
+                    Our journeys change lives. Not just yours but also those of our staff, communities, and the ecosystems we impact. We restore wilderness through low-volume high-value conservation tourism. Our purpose is a shared one. To ensure upliftment of local communities with help from guests, partners, donors, governments, and researchers. Our ambitions are bold. Our model is responsible, sustainable, inspiring.
+                </div>
+                <a href="{% url 'client:main_blog_page' %}"> View our blogs  <i class="fas fa-angle-right"></i> </a>
+            </div>
+        </div>
+    </section>   
+
+    <section class="safari-shop-section">
+
+        {% comment %} <video width="100%" height="100%" autoplay loop muted>
+            <source src="{{ MEDIA_URL }}/media/africa.mp4" type="video/mp4">
+        </video> {% endcomment %}
+        <div class="safari-shop-image" style="background-image: url('{% static 'images/img28.jpg' %}')">
+            <div class="shop-content">
+                <h1>WE GROW AS ONE</h1>
+                <div class="shop-details">
+                    When we say we're there every step of the way, we mean it, literally. From planning the perfect circuit, to private inter-camp transfers on Wilderness Air, and easing you through Customs. We’re with you on the ground, at your side, 24-7, from start to finish. Ready to take the road less travelled? Contact our Travel Designers to plan an unforgettable journey
+                </div>
+                <a href="{% url 'client:read_about' %}">read more <i class="fa fa-fas fa-angle-right"></i></a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="gear-shop-section">
+        <div class="gear-shop-img" style="background-image: url('{% static 'images/img20.jpg' %}')">
+            <h1>an experience for every taste</h1>
+        </div>
+        <div class="gear-shop-content">
+            Live out a desert fantasy on safari in Namibia. Climb ancient dunes of red sand, rising out of the Namib Desert. Feel the thrill of tracking desert-adapted black rhinos on foot with our expert guides. Wander along the Skeleton Coast, wild, windswept and seemingly stretching to infinity. Marvel at the wonders of Damaraland's Petrified Forest with trees as old as 280 million years.
+        </div>
+        <a href="">view our gearstore</a>
+    </section>
+
+    {% include 'partials/client/client_footer_home.html' %}
+{% endblock content %}

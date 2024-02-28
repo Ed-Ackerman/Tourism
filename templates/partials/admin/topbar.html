@@ -1,0 +1,16 @@
+{% load static %}
+<div class="topbar">
+    <div class="topbar-logo" style="background-image: url('{% static 'images/logo.png' %}')"></div>
+    <button class="toggle-btn"><i class="fa fa-bars"></i></button>
+    <div class="topbar-notifications">
+        <a href=""><i class="fa fa-envelope-open" ></i><div class="alert-notification">0</div></a>
+        <a href=""><i class="fa fa-bell" ></i><div class="alert-notification">0</div></a>
+        <a href="{% url 'client:index' %}"><i class="fa fa-globe" ></i></a>
+    </div>
+    <div class="account">
+        <div class="account-holder" id="user-account"><i class="fa fa-user-alt"></i><span class="top-span">{{user.username}}</span></div>
+        <a  class="account-holder" href="{% url 'authentication:logout' %}"><i class="fa fa-sign-out-alt"></i><span class="top-span">Logout</span></a>
+    </div>
+</div>
+
+

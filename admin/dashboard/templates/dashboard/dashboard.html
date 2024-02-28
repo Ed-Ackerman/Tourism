@@ -1,0 +1,33 @@
+{% extends 'admin_base.html' %}
+
+{% block title %}
+    Dashboard
+{% endblock title %}
+
+
+{% block content %}
+    <section class="admin_main">
+        {% include 'partials/admin/topbar.html' %}  
+        {% for message in messages %}
+            <div class="alert 
+            {% if message.tags == 'success' %}alert-success
+            {% elif message.tags == 'error' %}alert-danger
+            {% else %}alert-info
+            {% endif %} 
+            fade-message">
+                {{ message }}
+            </div>
+        {% endfor %}
+        <div class="main">
+            <div class="sidebar-main">
+                {% include 'partials/admin/sidebar.html' %}   
+            </div>
+            <div class="main-container">
+                <div class="main-content">
+                    <h1>Dashboard</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}
+    
