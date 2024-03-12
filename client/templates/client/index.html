@@ -93,7 +93,7 @@
         </div>
 
         <div class="experience-carousel">
-            <a href="{% url 'client:intinerary' %}" class="experience-profile">
+            <a href="{% url 'client:main_experience_page' %}" class="experience-profile">
                 <div class="experience-top-profile"></div>
                 <div class="experience-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
                 <div class="experience-details">
@@ -103,7 +103,7 @@
                     <div class="experience-location"> <i class="fas fa-map-marker"></i> Name 1</div>
                 </div>
             </a>
-            <a href="{% url 'client:intinerary' %}" class="experience-profile">
+            <a href="{% url 'client:main_experience_page' %}" class="experience-profile">
                 <div class="experience-top-profile"></div>
                 <div class="experience-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
                 <div class="experience-details">
@@ -113,7 +113,7 @@
                     <div class="experience-location"> <i class="fas fa-map-marker"></i> Name 2</div>
                 </div>
             </a>
-            <a href="{% url 'client:intinerary' %}" class="experience-profile">
+            <a href="{% url 'client:main_experience_page' %}" class="experience-profile">
                 <div class="experience-top-profile"></div>
                 <div class="experience-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
                 <div class="experience-details">
@@ -124,7 +124,7 @@
                 </div>
             </a>
                
-            <a href="{% url 'client:intinerary' %}" class="experience-profile">
+            <a href="{% url 'client:main_experience_page' %}" class="experience-profile">
                 <div class="experience-top-profile"></div>
                 <div class="experience-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
                 <div class="experience-details">
@@ -134,7 +134,7 @@
                     <div class="experience-location"> <i class="fas fa-map-marker"></i> Name 4</div>
                 </div>
             </a>      
-            <a href="{% url 'client:intinerary' %}" class="experience-profile">
+            <a href="{% url 'client:main_experience_page' %}" class="experience-profile">
                 <div class="experience-top-profile"></div>
                 <div class="experience-img" style="background-image: url('{% static 'images/img12.jpg' %}')"></div>
                 <div class="experience-details">
@@ -157,7 +157,9 @@
     </section>
 
     <section class="safari-iconic-section">
-        <div class="safari-iconic-section-img" style="background-image: url('{% static 'images/img5.jpg' %}')"></div>
+        <video width="100%" height="100%" autoplay loop muted>
+            <source src="{{ MEDIA_URL }}/media/africa.mp4" type="video/mp4">
+        </video>
         <h1>why travel with us</h1>
         <div class="iconic-message">
             Our accommodation is both luxurious and authentic. We promise unrivalled comfort and exclusivity while staying true to the vibrant soul and spirit of each, unique destination. Our private game viewing areas have limits on guest numbers, meaning fewer vehicles and people, with more intimate and up-close encounters with wildlife in their natural habitat.
