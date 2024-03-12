@@ -29,6 +29,8 @@ urlpatterns = [
     path('our_team_page/', views.our_team_page, name='our_team_page'),
     path('read_about/', views.read_about, name='read_about'),
     path('our_impact/', views.our_impact, name='our_impact'),
+    path('collaboration/', views.collaboration, name='collaboration'),
+    path('family/', views.family, name='family'),
     
     # read more folder urls
     path('read_more/', views.read_more, name='read_more'), 

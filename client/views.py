@@ -72,6 +72,14 @@ def our_impact(request):
     usernames = User.objects.all()
     return render(request, 'client/about/our_impact.html')
 
+def collaboration(request):
+    usernames = User.objects.all()
+    return render(request, 'client/about/collaboration.html')
+
+def family(request):
+    usernames = User.objects.all()
+    return render(request, 'client/about/family.html')
+
 # read more folder views
 def read_more(request):
     usernames = User.objects.all()

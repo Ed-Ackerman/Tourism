@@ -1,0 +1,83 @@
+{% extends 'client_base.html' %}
+
+{% load static %}
+
+{% block title %}
+    About - Scared Gem Safaris
+{% endblock title %}
+
+{% block content %}
+
+<section class="family-hero-section">
+    <h1>Our Growing Family</h1>
+</section>
+
+<section class="friendship-photos transition-imgs">
+    <div class="friendship-img main-img" style="background-image: url('{% static 'images/img34.jpg' %}')"></div>
+    <div class="friendship-img sub-img" style="background-image: url('{% static 'images/img24.jpg' %}')"></div>
+    <h1>Together as one</h1>
+    <div class="family-photo-details">
+        Our global partner network helps us bring to life our incomparable Wilderness journeys. We align with the very best airlines, non-profit organisatons, travel agencies, apparel brands and more all with a focus on sustainable practices and making a positive impact.
+    </div>
+</section>
+
+<section class="growing-work-force-section">
+    <div class="growing-work-force-img" style="background-image: url('{% static 'images/img26.jpg' %}')">
+
+    </div>
+    <div class="growing-work-force-content">
+        <h1>Our Growing Work Force</h1>
+        <div class="family-photo-details">
+            Our global partner network helps us bring to life our incomparable Wilderness journeys. We align with the very best airlines, non-profit organisatons, travel agencies, apparel brands and more all with a focus on sustainable practices and making a positive impact.
+        </div>
+    </div>
+</section>
+
+<section class="increasing-collaborations-section">
+    <div class="increasing-collaborations-img" style="background-image: url('{% static 'images/img30.jpg' %}')">
+
+    </div>
+
+    <div class="increasing-collaborations-content">
+        <h1>Our Growing Work Force</h1>
+        <div class="increasing-collaborations-details">
+            Our global partner network helps us bring to life our incomparable Wilderness journeys. We align with the very best airlines, non-profit organisatons, travel agencies, apparel brands and more all with a focus on sustainable practices and making a positive impact.
+        </div>
+    </div>
+</section>
+
+<section class="community-outreach-section transition-imgs">
+    <div class="community-outreach main-img" style="background-image: url('{% static 'images/img34.jpg' %}')"></div>
+    <div class="community-outreach sub-img" style="background-image: url('{% static 'images/img24.jpg' %}')"></div>
+    <h1>Our community outreach</h1>
+    <div class="community-outreach-details">
+        Our global partner network helps us bring to life our incomparable Wilderness journeys. We align with the very best airlines, non-profit organisatons, travel agencies, apparel brands and more all with a focus on sustainable practices and making a positive impact.
+    </div>
+</section>
+
+<section class="counter-section">
+    <div class="counter-profile">
+        <div class="counter-icons" style="background-image: url('{% static 'images/icon1.png' %}')"></div>
+        <div class="counter-number">6</div>
+        <div class="counter-name">African countries</div>
+    </div>
+    <div class="counter-profile">
+        <div class="counter-icons" style="background-image: url('{% static 'images/icon4.png' %}')"></div>
+        <div class="counter-number">60+</div>
+        <div class="counter-name">Camps and lodges</div>
+    </div>
+    <div class="counter-profile">
+        <div class="counter-icons" style="background-image: url('{% static 'images/icon3.png' %}')"></div>
+        <div class="counter-number">100+</div>
+        <div class="counter-name">Staff employed</div>
+    </div>
+    <div class="counter-profile">
+        <div class="counter-icons" style="background-image: url('{% static 'images/icon2.png' %}')"></div>
+        <div class="counter-number">100K+</div>
+        <div class="counter-name">Guests hosted per year</div>
+    </div>
+</section>
+
+{% include 'partials/client/client_footer.html' %}
+
+{% endblock content %}
